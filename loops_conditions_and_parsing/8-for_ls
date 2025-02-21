@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# This script lists the contents of the current directory in a list format, showing only the part after the first dash in the filename.
+
+for file in *; do
+  if [ -f "$file" ]; then
+    # Extract the part of the filename after the first dash
+    echo "${file#*-}"
+  fi
+done
