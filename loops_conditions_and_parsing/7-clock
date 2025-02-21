@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# This script displays the time for 12 hours and 59 minutes, with "Hour: X" displayed for each hour.
+
+hour=0
+while [ $hour -le 12 ]
+do
+  echo "Hour: $hour"  # Display the hour
+  minute=1
+  while [ $minute -le 59 ]
+  do
+    echo $minute  # Display the minute
+    ((minute++))
+  done
+  ((hour++))
+done
