@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# This script continuously writes "I am alive!" to /tmp/my_process every 2 seconds.
+# displays the conent of the file /etc/passwd
 while true; do
     echo "I am alive!" >> /tmp/my_process
     sleep 2
